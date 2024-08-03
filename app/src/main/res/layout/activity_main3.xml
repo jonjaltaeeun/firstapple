@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="#0061F3">
+    
+    <TextView
+        android:id="@+id/welcomeText"
+        android:text="Welcome!"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:textSize="60sp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        />
+
+    <EditText
+        android:id="@+id/resetname"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:background="@drawable/edit"
+        android:hint="Your name"
+        android:paddingLeft="10dp"
+        android:drawableLeft="@drawable/icon_size"
+        android:textColorHint="#62C7F6"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/resetmail"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit"
+        android:hint="Your E-mail"
+        android:paddingLeft="10dp"
+        android:textColorHint="#62C7F6"
+        app:layout_constraintTop_toBottomOf="@id/resetname"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+        android:id="@+id/resetpassword"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit"
+        android:hint="Create password"
+        android:paddingLeft="10dp"
+        android:textColorHint="#62C7F6"
+        app:layout_constraintTop_toBottomOf="@id/resetmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <Button
+        android:id="@+id/resetaccount"
+        android:text="Create account"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="#FB9527"
+        app:layout_constraintTop_toBottomOf="@id/resetpassword"
+        android:layout_marginTop="150dp"
+        app:layout_constraintStart_toStartOf="@id/resetpassword"/>
+
+    <Button
+        android:id="@+id/resetsign"
+        android:text="Sign in"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/resetpassword"
+        android:layout_marginTop="150dp"
+        app:layout_constraintEnd_toEndOf="@id/resetpassword"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
